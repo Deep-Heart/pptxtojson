@@ -598,7 +598,8 @@ async function processPicNode(node, warpObj, source) {
   const mimeType = getMimeType(imgFileExt)
   const { top, left } = getPosition(xfrmNode, undefined, undefined, warpObj.options.slideFactor)
   const { width, height } = getSize(xfrmNode, undefined, undefined, warpObj.options.slideFactor)
-  const src = `data:${mimeType};base64,${base64ArrayBuffer(imgArrayBuffer)}`
+  // const src = `data:${mimeType};base64,${base64ArrayBuffer(imgArrayBuffer)}`
+  const src = '';
 
   const isFlipV = getTextByPathList(xfrmNode, ['attrs', 'flipV']) === '1'
   const isFlipH = getTextByPathList(xfrmNode, ['attrs', 'flipH']) === '1'

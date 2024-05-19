@@ -61,5 +61,5 @@ export function getVerticalAlign(node, slideLayoutSpNode, slideMasterSpNode) {
       if (!anchor) anchor = 't'
     }
   }
-  return (anchor === 'ctr') ? 'mid' : ((anchor === 'b') ? 'down' : 'up')
+  return (anchor === 'ctr') ? 'middle' : ((anchor === 'b') ? 'down' : 'up')
 }

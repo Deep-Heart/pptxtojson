@@ -74,7 +74,7 @@ export async function getBgPicFill(bgPr, sorce, warpObj) {
   }
 
   return {
-    picBase64,
+    picPath: '',
     opacity,
   }
 }
