@@ -58,20 +58,20 @@ export function getFontSize(node, slideLayoutSpNode, type, slideMasterTextStyles
 
   fontSize = (isNaN(fontSize) || !fontSize) ? 18 : fontSize
 
-  return convertPointToPixels(fontSize) + 'px';
-  return parseFloat((fontSize * fontsizeFactor).toFixed(2)) + (fontsizeFactor === 1 ? 'pt' : 'px')
+  return convertPointToPixels(fontSize)
+  // return parseFloat((fontSize * fontsizeFactor).toFixed(2)) + (fontsizeFactor === 1 ? 'pt' : 'px')
 }
 
 function convertPointToPixels(pointSize) {
-  const pointsPerInch = 72;
-  const dpi = 96; // 假设屏幕分辨率为96 DPI
-  const pixelsPerInch = dpi; // 像素每英寸
+  const pointsPerInch = 72
+  const dpi = 96 // 假设屏幕分辨率为96 DPI
+  const pixelsPerInch = dpi // 像素每英寸
 
   // 计算每磅的像素数
-  const pixelsPerPoint = pixelsPerInch / pointsPerInch;
+  const pixelsPerPoint = pixelsPerInch / pointsPerInch
 
   // 转换字号为像素
-  return pointSize * pixelsPerPoint;
+  return pointSize * pixelsPerPoint
 }
 
 export function getFontBold(node) {
