@@ -108,7 +108,7 @@
 			reader.onload = async e => {
 				const json = await pptxtojson.parse(e.target.result, {
 					// slideFactor: 75 / 914400,
-  				// fontsizeFactor: 100 / 96,
+  				fontsizeFactor: 100 / 100,
 				})
 				editor.set(json)
 				console.log(json)
